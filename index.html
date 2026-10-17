@@ -83,6 +83,8 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .console{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;overflow:hidden;display:grid;min-width:0}
 .portrait{aspect-ratio:4/3;max-width:100%;background:
   linear-gradient(160deg,var(--surface-2),var(--surface));display:grid;place-items:center;position:relative;border-bottom:1px solid var(--line-strong)}
+.portrait{overflow:hidden}
+.portrait .pfp{width:100%;height:100%;object-fit:cover;display:block}
 .portrait .mono{font-family:var(--font-display);font-size:5rem;color:var(--accent);font-style:italic;line-height:1}
 .portrait small{position:absolute;bottom:.75rem;left:1rem;font-family:var(--font-mono);font-size:.6875rem;color:var(--muted);letter-spacing:.08em}
 .console-body{padding:1.1rem 1.1rem 1.2rem;display:grid;gap:.85rem;min-width:0}
@@ -205,8 +207,8 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
 
       <aside class="console" id="ask" aria-label="Ask Sandip">
         <div class="portrait">
-          <span class="mono">SP</span>
-          <small>PORTRAIT · REPLACE WITH PHOTO</small>
+          <img src="pfp.png" alt="Sandip Prakash" class="pfp" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+          <span class="mono" hidden>SP</span>
         </div>
         <div class="console-body">
           <div class="console-head"><b>Ask Sandip</b><span>Start here</span></div>
