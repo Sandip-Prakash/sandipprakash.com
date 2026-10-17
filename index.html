@@ -94,6 +94,12 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .msg{font-size:.875rem;line-height:1.55;padding:.6rem .75rem;border-radius:10px;min-width:0;overflow-wrap:anywhere}
 .msg.q{background:var(--accent-soft);color:var(--fg);justify-self:end;max-width:85%}
 .msg.a{background:var(--surface-2);color:var(--fg)}
+.msg.thinking{display:flex;align-items:center;gap:.5rem;color:var(--muted)}
+.dots{display:inline-flex;gap:3px}
+.dots i{width:5px;height:5px;border-radius:50%;background:var(--accent);animation:blink 1.2s infinite ease-in-out}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-2px)}}
+form.ask button:disabled,.prompts button:disabled{opacity:.5;cursor:default}
 .prompts{display:flex;flex-wrap:wrap;gap:.4rem}
 .prompts button{font:500 .8125rem var(--font-body);color:var(--fg);background:transparent;border:1px solid var(--line-strong);border-radius:999px;padding:.35rem .75rem;cursor:pointer}
 .prompts button:hover{border-color:var(--accent);color:var(--accent)}
@@ -190,9 +196,9 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
           <div class="chip"><b>Founder, Unhide</b><span>D2C footwear, integrated into Pocbuc</span></div>
         </div>
         <div class="links">
-          <button class="copy" type="button" id="copy-email" data-email="hello@sandipprakash.com">hello@sandipprakash.com</button>
-          <a href="#" id="resume-link">View resume</a>
-          <a href="https://www.linkedin.com/" id="linkedin-link" target="_blank" rel="noopener">LinkedIn</a>
+          <button class="copy" type="button" id="copy-email" data-email="sandipconnects@gmail.com">sandipconnects@gmail.com</button>
+          <a href="/resume.pdf" id="resume-link" target="_blank" rel="noopener">View resume</a>
+          <a href="https://www.linkedin.com/in/sandipprakash/" id="linkedin-link" target="_blank" rel="noopener">LinkedIn</a>
         </div>
         <p class="status"><span class="dot" aria-hidden="true"></span>Open to product marketing and product strategy roles.</p>
       </div>
@@ -367,9 +373,9 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
       <h2 style="margin-top:1rem">Hiring for product marketing? <em>Let's talk over chai.</em></h2>
       <p>Whether it's a role, a product to launch, or just a good conversation, I'd like to hear from you.</p>
       <div class="links">
-        <button class="copy" type="button" data-email="hello@sandipprakash.com">Copy email</button>
-        <a href="#">Resume</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <button class="copy" type="button" data-email="sandipconnects@gmail.com">Copy email</button>
+        <a href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="https://www.linkedin.com/in/sandipprakash/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="#ask">Ask Sandip</a>
       </div>
     </div>
@@ -397,7 +403,7 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
     {k:["samsung","tv"], a:"At Cornell Tech I worked with the Samsung TV Plus team on turning TV from something you watch alone into an interactive, social platform. The concept was approved and is being implemented."},
     {k:["yoga","hobby","hobbies","chai","theatre","tedx","fun"], a:"I teach yoga, did theatre and Toastmasters, and curated TEDx Gateway Mumbai. Outside work it's films, wordplay, and a lot of chai."}
   ];
-  const fallback = "I don't have a ready answer for that one. Email me at hello@sandipprakash.com and I'll reply personally.";
+  const fallback = "I don't have a ready answer for that one. Email me at sandipconnects@gmail.com and I'll reply personally.";
   const log = document.getElementById('log');
   function add(text, cls){ const d=document.createElement('div'); d.className='msg '+cls; d.textContent=text; log.appendChild(d); log.scrollTop=log.scrollHeight; }
   function answer(q){
@@ -405,7 +411,29 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
     for(const item of answers){ const n=item.k.filter(k=>s.includes(k)).length; if(n>score){score=n;best=item;} }
     return best?best.a:fallback;
   }
-  function ask(q){ q=q.trim(); if(!q) return; add(q,'q'); setTimeout(()=>add(answer(q),'a'),250); }
+  let busy=false;
+  const controls=()=>[...document.querySelectorAll('#prompts button, #ask-form button, #ask-input')];
+  function setBusy(b){ busy=b; controls().forEach(c=>c.disabled=b); }
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function ask(q){
+    q=q.trim(); if(!q||busy) return;
+    setBusy(true); add(q,'q');
+    const reply=answer(q);
+    const t=document.createElement('div'); t.className='msg a thinking';
+    t.innerHTML='<span>Thinking</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>';
+    log.appendChild(t); log.scrollTop=log.scrollHeight;
+    const think=reduce?300:900+Math.min(reply.length*4,900)+Math.random()*400;
+    setTimeout(()=>{
+      t.className='msg a'; t.textContent='';
+      const words=reply.split(' '); let i=0;
+      if(reduce){ t.textContent=reply; setBusy(false); input.focus(); return; }
+      (function type(){
+        t.textContent+=(i?' ':'')+words[i++]; log.scrollTop=log.scrollHeight;
+        if(i<words.length) setTimeout(type,28+Math.random()*45);
+        else { setBusy(false); }
+      })();
+    },think);
+  }
   document.getElementById('prompts').addEventListener('click',e=>{ if(e.target.tagName==='BUTTON') ask(e.target.textContent); });
   const form=document.getElementById('ask-form'), input=document.getElementById('ask-input');
   form.addEventListener('submit',e=>{ e.preventDefault(); ask(input.value); input.value=''; });
