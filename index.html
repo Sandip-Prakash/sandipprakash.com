@@ -93,7 +93,7 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
   linear-gradient(160deg,var(--surface-2),var(--surface));display:grid;place-items:center;position:relative;border-bottom:1px solid var(--line-strong)}
 .portrait{overflow:hidden}
 .portrait picture{position:absolute;inset:0}
-.portrait .pfp{width:100%;height:100%;object-fit:cover;object-position:50% 63%;display:block}
+.portrait .pfp{width:100%;height:100%;object-fit:cover;object-position:50% 0%;display:block}
 .portrait .mono{font-family:var(--font-display);font-size:5rem;color:var(--accent);font-style:italic;line-height:1}
 .portrait small{position:absolute;bottom:.75rem;left:1rem;font-family:var(--font-mono);font-size:.75rem;color:var(--muted);letter-spacing:.08em}
 .console-body{padding:1.1rem 1.1rem 1.2rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;min-width:0}
@@ -296,7 +296,7 @@ section[id],#ask{scroll-margin-top:4.5rem}
 
       <aside class="console" id="ask" aria-label="Ask Sandip">
         <div class="portrait">
-          <picture><source srcset="pfp.webp" type="image/webp"><img src="pfp.jpeg" alt="Sandip Prakash" class="pfp" width="960" height="1280" decoding="async" onerror="this.closest('picture').hidden=true;this.closest('picture').nextElementSibling.hidden=false"></picture>
+          <picture><source srcset="pfp.webp" type="image/webp"><img src="pfp.jpeg" alt="Sandip Prakash" class="pfp" width="960" height="1039" decoding="async" onerror="this.closest('picture').hidden=true;this.closest('picture').nextElementSibling.hidden=false"></picture>
           <span class="mono" hidden>SP</span>
         </div>
         <div class="console-body">
