@@ -6,6 +6,14 @@
 <title>Sandip Prakash</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Sandip Prakash — product marketer and builder. Embedded engineer turned founder turned GTM lead, now building AI products at Cornell Tech.">
+<meta name="theme-color" content="#0d1214" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f2f4f3" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sandipprakash.com/">
+<meta property="og:title" content="Sandip Prakash">
+<meta property="og:description" content="Product marketer and builder. Embedded engineer turned founder turned GTM lead, now building AI products at Cornell Tech.">
+<meta property="og:image" content="https://sandipprakash.com/pfp.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -80,17 +88,18 @@ header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);flex:none}
 
 /* Ask Sandip console */
-.console{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;overflow:hidden;display:grid;min-width:0}
+.console{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr);min-width:0}
 .portrait{aspect-ratio:4/3;max-width:100%;background:
   linear-gradient(160deg,var(--surface-2),var(--surface));display:grid;place-items:center;position:relative;border-bottom:1px solid var(--line-strong)}
 .portrait{overflow:hidden}
-.portrait .pfp{width:100%;height:100%;object-fit:cover;display:block}
+.portrait picture{position:absolute;inset:0}
+.portrait .pfp{width:100%;height:100%;object-fit:cover;object-position:50% 60%;display:block}
 .portrait .mono{font-family:var(--font-display);font-size:5rem;color:var(--accent);font-style:italic;line-height:1}
-.portrait small{position:absolute;bottom:.75rem;left:1rem;font-family:var(--font-mono);font-size:.6875rem;color:var(--muted);letter-spacing:.08em}
-.console-body{padding:1.1rem 1.1rem 1.2rem;display:grid;gap:.85rem;min-width:0}
+.portrait small{position:absolute;bottom:.75rem;left:1rem;font-family:var(--font-mono);font-size:.75rem;color:var(--muted);letter-spacing:.08em}
+.console-body{padding:1.1rem 1.1rem 1.2rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;min-width:0}
 .console-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
 .console-head b{font-weight:600}
-.console-head span{font-family:var(--font-mono);font-size:.6875rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+.console-head span{font-family:var(--font-mono);font-size:.75rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
 .console-sub{color:var(--muted);font-size:.875rem;line-height:1.5}
 .log{display:grid;gap:.6rem;max-height:16rem;overflow-y:auto;min-width:0}
 .msg{font-size:.875rem;line-height:1.55;padding:.6rem .75rem;border-radius:10px;min-width:0;overflow-wrap:anywhere}
@@ -106,9 +115,9 @@ form.ask button:disabled,.prompts button:disabled{opacity:.5;cursor:default}
 .prompts button{font:500 .8125rem var(--font-body);color:var(--fg);background:transparent;border:1px solid var(--line-strong);border-radius:999px;padding:.35rem .75rem;cursor:pointer}
 .prompts button:hover{border-color:var(--accent);color:var(--accent)}
 form.ask{display:flex;gap:.5rem}
-form.ask input{flex:1;min-width:0;font:400 .9375rem var(--font-body);color:var(--fg);background:var(--bg);border:1px solid var(--line-strong);border-radius:10px;padding:.65rem .8rem}
+form.ask input{flex:1;min-width:0;font:400 1rem var(--font-body);color:var(--fg);background:var(--bg);border:1px solid var(--line-strong);border-radius:10px;padding:.65rem .8rem}
 form.ask input::placeholder{color:var(--muted)}
-form.ask button{font:600 .875rem var(--font-body);background:var(--accent);color:var(--bg);border:0;border-radius:10px;padding:0 1rem;cursor:pointer}
+form.ask button{font:600 .875rem var(--font-body);background:var(--accent);color:var(--bg);border:0;border-radius:10px;padding:0 1rem;min-height:44px;flex:none;cursor:pointer}
 
 /* Sections */
 section.band{border-top:1px solid var(--line)}
@@ -122,7 +131,7 @@ section.band > .wrap{padding-block:clamp(3.5rem,8vw,5.5rem)}
 .act:first-child{border-top:0;padding-top:0}
 .act-label{display:grid;gap:.35rem;align-content:start}
 .act-label .num{font-family:var(--font-display);font-style:italic;font-size:var(--step-2);color:var(--accent);line-height:1}
-.act-label .role{font-family:var(--font-mono);font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.act-label .role{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .act-body{display:grid;gap:1rem;max-width:40rem}
 .act-body h3{font-size:var(--step-2)}
 .act-body > p{color:var(--muted)}
@@ -136,7 +145,7 @@ section.band > .wrap{padding-block:clamp(3.5rem,8vw,5.5rem)}
 /* Work */
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
 .card{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;padding:1.4rem;display:grid;grid-template-rows:auto auto 1fr auto;gap:.75rem;min-width:0}
-.tag{justify-self:start;font-family:var(--font-mono);font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:.25rem .55rem;border-radius:999px}
+.tag{justify-self:start;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:.25rem .55rem;border-radius:999px}
 .card h3{font-size:1.625rem}
 .card p{color:var(--muted);font-size:.9375rem}
 .card .proof{color:var(--fg);font-weight:600;font-size:.9375rem;border-top:1px solid var(--line);padding-top:.75rem}
@@ -168,6 +177,86 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
   .nav ul{gap:.9rem}
   .nav li.hide-sm{display:none}
   .roles li{grid-template-columns:minmax(0,1fr)}
+}
+
+/* Anchors land below the sticky header */
+section[id],#ask{scroll-margin-top:4.5rem}
+.prompts button{min-height:36px}
+
+/* Floating "Ask Sandip" shortcut (phones only, hidden while the console is on screen) */
+.fab{display:none}
+
+@media (max-width: 860px){
+  .console{max-width:30rem}
+}
+
+@media (max-width: 640px){
+  /* Nav: one line, 44px tap targets */
+  .nav .wrap{padding-block:.35rem;gap:.5rem}
+  .brand{white-space:nowrap;letter-spacing:.08em;font-size:.75rem}
+  .nav ul{gap:.25rem;flex-wrap:nowrap}
+  .nav a{display:inline-flex;align-items:center;min-height:44px;padding-inline:.5rem;white-space:nowrap}
+
+  /* Hero: tighter rhythm */
+  .hero .wrap{padding-block:2.25rem 2.5rem;gap:2rem}
+  .hero .eyebrow{font-size:.75rem;letter-spacing:.08em}
+  .pitch{font-size:1.0625rem;margin-top:1.1rem}
+
+  /* Proof chips: one grouped list instead of three tall cards */
+  .chips{gap:0;margin-top:1.5rem;background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;overflow:hidden}
+  .chip{border:0;border-radius:0;background:none;padding:.75rem 1rem;border-top:1px solid var(--line-strong)}
+  .chip:first-child{border-top:0}
+
+  /* Links become full-size buttons */
+  .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;margin-top:1.5rem}
+  .links a,.links button.copy{display:flex;align-items:center;justify-content:center;min-height:46px;padding:.5rem .75rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);text-align:center;overflow-wrap:anywhere}
+  .links > .copy:first-child{grid-column:1 / -1;background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600}
+  .links > .copy:first-child:hover{color:var(--bg)}
+  .links > :nth-child(4){grid-column:1 / -1}
+  .status{font-size:.875rem;align-items:flex-start}
+  .status .dot{margin-top:.45rem;margin-left:4px}
+
+  /* Ask console */
+  .console-body{padding:1rem}
+  .log{max-height:15rem;overscroll-behavior:contain}
+  .msg{font-size:.9375rem}
+  .prompts{gap:.5rem}
+  .prompts button{min-height:40px;padding:.5rem .85rem;font-size:.875rem}
+  form.ask input{min-height:46px}
+
+  /* Readable minimum for small labels */
+  .tag,.act-label .role,.console-head span{font-size:.75rem}
+
+  /* Sections */
+  section.band > .wrap{padding-block:3rem}
+  .section-head{margin-bottom:1.75rem}
+  h2{font-size:2.125rem}
+  .act{padding-block:1.5rem}
+  .act-body h3,.card h3{font-size:1.5rem}
+  .card{padding:1.15rem;gap:.6rem}
+  .card .proof a{display:inline-block;padding-block:.5rem}
+  .offstage{gap:1.5rem}
+  .connect h2{font-size:2.25rem}
+  footer .wrap{padding-block:1.5rem calc(5rem + env(safe-area-inset-bottom,0px))}
+
+  .fab{position:fixed;z-index:6;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:.5rem;min-height:48px;padding:0 1.1rem;border-radius:999px;background:var(--accent);color:var(--bg);font:600 .9375rem var(--font-body);text-decoration:none;box-shadow:0 8px 24px #0006;transition:opacity .2s,transform .2s}
+  .fab[aria-hidden="true"]{opacity:0;transform:translateY(12px);pointer-events:none}
+  .fab .dots i{background:var(--bg)}
+}
+@media (max-width: 360px){
+  .nav li:not(:last-child){display:none}
+  .brand{font-size:.7rem}
+  .links{grid-template-columns:minmax(0,1fr)}
+  .links > *{grid-column:auto!important}
+  h2{font-size:1.9rem}
+}
+
+/* Touch screens of any size (tablets included): comfortable tap areas */
+@media (pointer: coarse){
+  .nav a{display:inline-flex;align-items:center;min-height:44px}
+  .links a,.links button.copy{padding-block:.6rem}
+  .prompts button{min-height:40px}
+  .card .proof a{display:inline-block;padding-block:.5rem}
 }
 </style>
 </head>
@@ -207,7 +296,7 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
 
       <aside class="console" id="ask" aria-label="Ask Sandip">
         <div class="portrait">
-          <img src="pfp.png" alt="Sandip Prakash" class="pfp" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+          <picture><source srcset="pfp.webp" type="image/webp"><img src="pfp.jpg" alt="Sandip Prakash" class="pfp" width="960" height="1280" decoding="async" onerror="this.closest('picture').hidden=true;this.closest('picture').nextElementSibling.hidden=false"></picture>
           <span class="mono" hidden>SP</span>
         </div>
         <div class="console-body">
@@ -391,6 +480,7 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
   </div>
 </footer>
 
+<a class="fab" id="fab" href="#ask" aria-hidden="true" tabindex="-1"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Ask Sandip</a>
 <div class="toast" id="toast" hidden></div>
 
 <script>
@@ -439,6 +529,15 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1
   document.getElementById('prompts').addEventListener('click',e=>{ if(e.target.tagName==='BUTTON') ask(e.target.textContent); });
   const form=document.getElementById('ask-form'), input=document.getElementById('ask-input');
   form.addEventListener('submit',e=>{ e.preventDefault(); ask(input.value); input.value=''; });
+
+  const fab=document.getElementById('fab'), hero=document.querySelector('.hero');
+  if('IntersectionObserver' in window){
+    const seen={hero:true,ask:false};
+    const sync=()=>{ const show=!seen.hero&&!seen.ask; fab.setAttribute('aria-hidden',show?'false':'true'); fab.tabIndex=show?0:-1; };
+    new IntersectionObserver(es=>{es.forEach(e=>{seen[e.target===hero?'hero':'ask']=e.isIntersecting});sync();},{threshold:0}).observe(hero);
+    new IntersectionObserver(es=>{es.forEach(e=>{seen.ask=e.isIntersecting});sync();},{threshold:.25}).observe(document.getElementById('ask'));
+  }
+  fab.addEventListener('click',()=>setTimeout(()=>{ if(window.matchMedia('(hover:none)').matches) return; input.focus({preventScroll:true}); },400));
 
   const toast=document.getElementById('toast');
   function show(msg){ toast.textContent=msg; toast.hidden=false; clearTimeout(show.t); show.t=setTimeout(()=>toast.hidden=true,1800); }
