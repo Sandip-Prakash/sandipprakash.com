@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/ask.js": {
+      "includeFiles": "knowledge/**",
+      "maxDuration": 30
+    }
+  },
+  "redirects": [
+    { "source": "/knowledge/:path*", "destination": "/", "permanent": false }
+  ]
+}

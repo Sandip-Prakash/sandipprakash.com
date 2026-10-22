@@ -3,274 +3,345 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sandip Prakash</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Sandip Prakash — product marketer and builder. Embedded engineer turned founder turned GTM lead, now building AI products at Cornell Tech.">
-<meta name="theme-color" content="#0d1214" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#f2f4f3" media="(prefers-color-scheme: light)">
+<title>Sandip Prakash | Product Marketing & Growth</title>
+<meta name="description" content="Sandip Prakash is a product marketer with an engineering core. Positioning, go-to-market and growth built on 2,500+ customer interviews. Cornell MBA 2026.">
+<meta name="theme-color" content="#f3f4f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1013" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sandipprakash.com/">
-<meta property="og:title" content="Sandip Prakash">
-<meta property="og:description" content="Product marketer and builder. Embedded engineer turned founder turned GTM lead, now building AI products at Cornell Tech.">
-<meta property="og:image" content="https://sandipprakash.com/pfp.jpg">
+<meta property="og:title" content="Sandip Prakash | Product Marketing & Growth">
+<meta property="og:description" content="Customer insight in. Market-ready positioning out. Try the live AI demo.">
+<meta property="og:image" content="https://sandipprakash.com/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one narrow reading column with a hero split (pitch | Ask Sandip console), then the story told as four acts, work cards, an "off stage" band, and contact. Dark-first, chai-amber accent. */
+/* Layout: a product launch page where the product is Sandip. Hero with a live AI demo window, then benchmarks, modules, process, customer stories, spec sheet, changelog, plans, FAQ, CTA. Saffron accent on cool paper; ink bands for emphasis. */
 :root{
-  --bg:#0d1214;
-  --surface:#141b1e;
-  --surface-2:#1a2327;
-  --line:#25303470;
-  --line-strong:#2d3a3f;
-  --fg:#eaeeec;
-  --muted:#97a3a2;
-  --accent:#dba45e;
-  --accent-soft:#dba45e1f;
-  --glow:#1d3a3a;
-  --font-display:"Instrument Serif", "Iowan Old Style", Georgia, serif;
-  --font-body:"Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
-  --font-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
-  --step--1:.8125rem; --step-0:1rem; --step-1:1.1875rem; --step-2:1.75rem; --step-3:2.5rem; --step-4:clamp(3rem,9vw,5.25rem);
-  color-scheme:dark;
+  --bg:#f3f4f1;
+  --surface:#ffffff;
+  --surface-2:#eaece7;
+  --line:#d8dcd5;
+  --ink:#12161c;
+  --muted:#58616d;
+  --accent:#c4490a;
+  --accent-text:#ad3f08;
+  --on-accent:#ffffff;
+  --accent-soft:#c4490a14;
+  --band:#12161c;
+  --on-band:#eef0ec;
+  --band-muted:#a0a8b0;
+  --band-line:#2a3139;
+  --band-accent:#ff7a33;
+  --shadow:0 1px 2px #12161c0d, 0 12px 32px -12px #12161c26;
+  --font-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body:"Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono:"Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --r:14px;
+  color-scheme:light;
 }
-@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){
-  --bg:#f2f4f3; --surface:#ffffff; --surface-2:#e9edec; --line:#c9d2d070; --line-strong:#c4cecb;
-  --fg:#11181a; --muted:#56625f; --accent:#9a5b17; --accent-soft:#9a5b1716; --glow:#d7e6e2; color-scheme:light;
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0d1013; --surface:#151a1f; --surface-2:#1c2228; --line:#272e35; --ink:#eef1ee; --muted:#9aa3ab;
+  --accent:#ff7a33; --accent-text:#ff8f52; --on-accent:#170a03; --accent-soft:#ff7a331c;
+  --band:#181e24; --on-band:#eef1ee; --band-muted:#9aa3ab; --band-line:#2b333b; --band-accent:#ff7a33; --shadow:0 1px 2px #0006, 0 16px 40px -16px #000a; color-scheme:dark;
 }}
-:root[data-theme="light"]{
-  --bg:#f2f4f3; --surface:#ffffff; --surface-2:#e9edec; --line:#c9d2d070; --line-strong:#c4cecb;
-  --fg:#11181a; --muted:#56625f; --accent:#9a5b17; --accent-soft:#9a5b1716; --glow:#d7e6e2; color-scheme:light;
+:root[data-theme="dark"]{
+  --bg:#0d1013; --surface:#151a1f; --surface-2:#1c2228; --line:#272e35; --ink:#eef1ee; --muted:#9aa3ab;
+  --accent:#ff7a33; --accent-text:#ff8f52; --on-accent:#170a03; --accent-soft:#ff7a331c;
+  --band:#181e24; --on-band:#eef1ee; --band-muted:#9aa3ab; --band-line:#2b333b; --band-accent:#ff7a33; --shadow:0 1px 2px #0006, 0 16px 40px -16px #000a; color-scheme:dark;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{
-  margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:var(--step-0);line-height:1.6;
-  background-image:radial-gradient(60rem 30rem at 10% -10%, var(--glow), transparent 70%);
-  background-repeat:no-repeat;
-}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--font-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--bg)}
+img{max-width:100%;display:block}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.wrap{max-width:68rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.eyebrow{font-family:var(--font-mono);font-size:var(--step--1);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-h1,h2,h3{font-family:var(--font-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.05}
-h2{font-size:var(--step-3)}
-h3{font-size:var(--step-2)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+section[id],#demo{scroll-margin-top:80px}
+.wrap{max-width:74rem;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;letter-spacing:-.025em;line-height:1.02;margin:0;text-wrap:balance}
 p{margin:0}
+.mono{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+.label{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
+.lede{color:var(--muted);font-size:1.0625rem;max-width:40rem;text-wrap:pretty}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;padding:0 1.25rem;border-radius:999px;font:600 .9375rem var(--font-body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease, filter .15s ease, border-color .15s ease;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--on-accent)}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-band{background:transparent;color:var(--on-band);border-color:var(--band-line)}
+.btn-band:hover{border-color:var(--on-band)}
+.band .btn-primary{background:var(--band-accent);color:#170a03}
+.arrow{transition:transform .15s ease}
+.btn:hover .arrow{transform:translateX(3px)}
 
 /* Nav */
-header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.9rem}
-.brand{font-family:var(--font-mono);font-size:var(--step--1);letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
-.nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-.nav a{text-decoration:none;color:var(--muted);font-size:.9375rem}
-.nav a:hover{color:var(--fg)}
-.nav a.ask{color:var(--accent)}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.nav.scrolled{border-bottom-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:1.5rem;min-height:64px}
+.brand{display:flex;align-items:baseline;gap:.5rem;text-decoration:none;margin-right:auto}
+.brand b{font:800 1.3rem var(--font-display);letter-spacing:-.03em}
+.brand span{font-family:var(--font-mono);font-size:.6875rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.1rem .45rem;letter-spacing:.04em}
+.nav ul{display:flex;gap:.25rem;list-style:none;margin:0;padding:0}
+.nav ul a{display:inline-flex;align-items:center;min-height:40px;padding:0 .7rem;border-radius:999px;text-decoration:none;color:var(--muted);font-size:.9375rem}
+.nav ul a:hover{color:var(--ink);background:var(--surface-2)}
+.nav .btn{min-height:40px;padding:0 1rem;font-size:.875rem}
 
 /* Hero */
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4rem);padding-block:clamp(3rem,8vw,5.5rem) 3.5rem;align-items:start}
-.hero h1{font-size:var(--step-4);letter-spacing:-.01em}
-.hero h1 em{font-style:italic;color:var(--accent)}
-.pitch{font-size:var(--step-1);color:var(--fg);max-width:34rem;margin-top:1.5rem;line-height:1.55}
-.pitch strong{font-weight:600}
-.chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin-top:2rem}
-.chip{background:var(--surface);border:1px solid var(--line-strong);border-radius:10px;padding:.9rem 1rem;display:grid;gap:.15rem;align-content:start}
-.chip b{font-weight:600;font-size:.9375rem}
-.chip span{color:var(--muted);font-size:var(--step--1);line-height:1.4}
-.links{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;margin-top:1.75rem;align-items:center}
-.links a,.links button.copy{font:500 .9375rem var(--font-body);color:var(--fg);text-decoration:none;border:0;background:none;padding:0;cursor:pointer;border-bottom:1px solid var(--accent);padding-bottom:2px}
-.links a:hover,.links button.copy:hover{color:var(--accent)}
-.status{margin-top:1.25rem;color:var(--muted);font-size:.9375rem;display:flex;gap:.5rem;align-items:center}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft);flex:none}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,4.5rem);align-items:center;padding-block:clamp(2.5rem,7vw,5.5rem) clamp(2.5rem,6vw,4.5rem)}
+.release{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.3rem .8rem .3rem .3rem;font-size:.8125rem;color:var(--muted);max-width:100%}
+.release b{font:500 .6875rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--on-accent);border-radius:999px;padding:.2rem .55rem;flex:none}
+.release span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.release:hover{border-color:var(--ink);color:var(--ink)}
+.hero h1{font-size:clamp(2.6rem,6.2vw,4.75rem);margin-top:1.4rem;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--accent-text)}
+.hero .lede{margin-top:1.25rem;font-size:clamp(1.0625rem,1.6vw,1.1875rem)}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.meta{display:flex;flex-wrap:wrap;gap:.35rem 1rem;margin-top:1.5rem;color:var(--muted)}
+.meta span{display:inline-flex;align-items:center;gap:.45rem}
+.meta span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
 
-/* Ask Sandip console */
-.console{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr);min-width:0}
-.portrait{aspect-ratio:4/3;max-width:100%;background:
-  linear-gradient(160deg,var(--surface-2),var(--surface));display:grid;place-items:center;position:relative;border-bottom:1px solid var(--line-strong)}
-.portrait{overflow:hidden}
-.portrait picture{position:absolute;inset:0}
-.portrait .pfp{width:100%;height:100%;object-fit:cover;object-position:50% 0%;display:block}
-.portrait .mono{font-family:var(--font-display);font-size:5rem;color:var(--accent);font-style:italic;line-height:1}
-.portrait small{position:absolute;bottom:.75rem;left:1rem;font-family:var(--font-mono);font-size:.75rem;color:var(--muted);letter-spacing:.08em}
-.console-body{padding:1.1rem 1.1rem 1.2rem;display:grid;grid-template-columns:minmax(0,1fr);gap:.85rem;min-width:0}
-.console-head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
-.console-head b{font-weight:600}
-.console-head span{font-family:var(--font-mono);font-size:.75rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
-.console-sub{color:var(--muted);font-size:.875rem;line-height:1.5}
-.log{display:grid;gap:.6rem;max-height:16rem;overflow-y:auto;min-width:0}
-.msg{font-size:.875rem;line-height:1.55;padding:.6rem .75rem;border-radius:10px;min-width:0;overflow-wrap:anywhere}
-.msg.q{background:var(--accent-soft);color:var(--fg);justify-self:end;max-width:85%}
-.msg.a{background:var(--surface-2);color:var(--fg)}
-.msg.thinking{display:flex;align-items:center;gap:.5rem;color:var(--muted)}
+/* Live demo window */
+.demo{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr);min-width:0}
+.chrome{display:flex;align-items:center;gap:.75rem;padding:.65rem .9rem;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.lights{display:flex;gap:6px}
+.lights i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.chrome .mono{color:var(--muted);font-size:.6875rem;flex:1;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.live{display:inline-flex;align-items:center;gap:.35rem;font:500 .6875rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text)}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent-soft)}70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.demo-body{display:grid;grid-template-columns:minmax(0,1fr);gap:.9rem;padding:1.1rem}
+.who{display:flex;align-items:center;gap:.75rem}
+.who img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--line)}
+.who b{display:block;font-weight:600;line-height:1.2}
+.who small{display:block;color:var(--muted);font-size:.8125rem;line-height:1.3}
+.log{display:grid;gap:.6rem;align-content:start;height:clamp(13rem,30vh,17rem);overflow-y:auto;overscroll-behavior:contain;padding-right:.25rem}
+.msg{font-size:.9375rem;line-height:1.55;padding:.65rem .85rem;border-radius:12px;min-width:0;overflow-wrap:anywhere;white-space:pre-wrap}
+.msg.q{background:var(--accent);color:var(--on-accent);justify-self:end;max-width:85%;border-bottom-right-radius:4px}
+.msg.a{background:var(--surface-2);color:var(--ink);justify-self:start;max-width:95%;border-bottom-left-radius:4px}
+.msg.thinking{display:inline-flex;align-items:center;gap:.55rem;color:var(--muted)}
+.msg.typing::after{content:"";display:inline-block;width:2px;height:1em;margin-left:2px;vertical-align:-2px;background:var(--accent);animation:caret .9s steps(1) infinite}
+@keyframes caret{50%{opacity:0}}
 .dots{display:inline-flex;gap:3px}
 .dots i{width:5px;height:5px;border-radius:50%;background:var(--accent);animation:blink 1.2s infinite ease-in-out}
-.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
-@keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-2px)}}
-form.ask button:disabled,.prompts button:disabled{opacity:.5;cursor:default}
-.prompts{display:flex;flex-wrap:wrap;gap:.4rem}
-.prompts button{font:500 .8125rem var(--font-body);color:var(--fg);background:transparent;border:1px solid var(--line-strong);border-radius:999px;padding:.35rem .75rem;cursor:pointer}
-.prompts button:hover{border-color:var(--accent);color:var(--accent)}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:none}40%{opacity:1;transform:translateY(-2px)}}
+.prompts{display:flex;flex-wrap:wrap;gap:.45rem}
+.prompts button{font:500 .8125rem var(--font-body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.45rem .8rem;min-height:36px;cursor:pointer}
+.prompts button:hover{border-color:var(--accent);color:var(--accent-text)}
 form.ask{display:flex;gap:.5rem}
-form.ask input{flex:1;min-width:0;font:400 1rem var(--font-body);color:var(--fg);background:var(--bg);border:1px solid var(--line-strong);border-radius:10px;padding:.65rem .8rem}
+form.ask input{flex:1;min-width:0;font:400 1rem var(--font-body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:0 .9rem;min-height:46px}
+form.ask input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 form.ask input::placeholder{color:var(--muted)}
-form.ask button{font:600 .875rem var(--font-body);background:var(--accent);color:var(--bg);border:0;border-radius:10px;padding:0 1rem;min-height:44px;flex:none;cursor:pointer}
+form.ask button{flex:none;min-height:46px;padding:0 1.1rem;border:0;border-radius:12px;background:var(--accent);color:var(--on-accent);font:600 .9375rem var(--font-body);cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+.disclaimer{font-size:.75rem;color:var(--muted);line-height:1.45}
+
+/* Logo strip */
+.logos{border-block:1px solid var(--line)}
+.logos .wrap{display:flex;align-items:center;gap:1rem 2.5rem;flex-wrap:wrap;padding-block:1.4rem}
+.logos .mono{color:var(--muted)}
+.logos ul{display:flex;flex-wrap:wrap;gap:.75rem 2.25rem;list-style:none;margin:0;padding:0}
+.logos li{font:700 1.0625rem var(--font-display);letter-spacing:-.01em;color:var(--muted)}
 
 /* Sections */
-section.band{border-top:1px solid var(--line)}
-section.band > .wrap{padding-block:clamp(3.5rem,8vw,5.5rem)}
-.section-head{display:grid;gap:.75rem;margin-bottom:2.5rem;max-width:42rem}
-.section-head p{color:var(--muted)}
+.sec > .wrap{padding-block:clamp(4rem,9vw,7rem)}
+.sec.tight > .wrap{padding-top:0}
+.tint{background:var(--surface-2)}
+.head{display:grid;gap:.85rem;margin-bottom:clamp(2rem,4vw,3rem);max-width:46rem}
+.head h2{font-size:clamp(2rem,4.4vw,3.25rem)}
 
-/* Acts */
-.acts{display:grid;gap:0}
-.act{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:2rem;padding-block:2rem;border-top:1px solid var(--line)}
-.act:first-child{border-top:0;padding-top:0}
-.act-label{display:grid;gap:.35rem;align-content:start}
-.act-label .num{font-family:var(--font-display);font-style:italic;font-size:var(--step-2);color:var(--accent);line-height:1}
-.act-label .role{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.act-body{display:grid;gap:1rem;max-width:40rem}
-.act-body h3{font-size:var(--step-2)}
-.act-body > p{color:var(--muted)}
-.roles{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
-.roles li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:baseline;padding-bottom:.6rem;border-bottom:1px dashed var(--line-strong)}
-.roles li:last-child{border-bottom:0;padding-bottom:0}
-.roles b{font-weight:600}
-.roles span{color:var(--muted);font-size:.875rem}
-.roles em{font-style:normal;font-family:var(--font-mono);font-size:.75rem;color:var(--muted);white-space:nowrap}
+/* Benchmarks */
+.bench{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.bench div{background:var(--surface);padding:1.4rem 1.2rem;display:grid;gap:.35rem;align-content:start}
+.bench b{font:800 clamp(1.9rem,3.2vw,2.5rem)/1 var(--font-display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.bench span{font-size:.9375rem;line-height:1.35}
+.bench small{font:400 .75rem var(--font-mono);color:var(--muted);letter-spacing:.02em}
 
-/* Work */
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
-.card{background:var(--surface);border:1px solid var(--line-strong);border-radius:14px;padding:1.4rem;display:grid;grid-template-rows:auto auto 1fr auto;gap:.75rem;min-width:0}
-.tag{justify-self:start;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:.25rem .55rem;border-radius:999px}
-.card h3{font-size:1.625rem}
-.card p{color:var(--muted);font-size:.9375rem}
-.card .proof{color:var(--fg);font-weight:600;font-size:.9375rem;border-top:1px solid var(--line);padding-top:.75rem}
+/* Modules */
+.modules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.module{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;display:grid;grid-template-rows:auto auto 1fr auto;gap:.75rem;min-width:0}
+.module .mono{color:var(--muted)}
+.module h3{font-size:1.375rem;letter-spacing:-.02em}
+.module p{color:var(--muted);font-size:.9375rem}
+.module .proof{color:var(--ink)}
+.proof{display:flex;gap:.6rem;align-items:baseline;border-top:1px dashed var(--line);padding-top:.85rem;font-size:.875rem;font-weight:500}
+.proof::before{content:"Proof";font:500 .6875rem var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);flex:none}
 
-/* Off stage */
-.offstage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
-.off h3{font-size:1.5rem;margin-bottom:.5rem}
-.off p{color:var(--muted);font-size:.9375rem}
-.langs{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
-.langs span{font-family:var(--font-mono);font-size:.75rem;border:1px solid var(--line-strong);border-radius:6px;padding:.2rem .5rem;color:var(--fg)}
-.langs span i{font-style:normal;color:var(--muted)}
+/* How it works */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+.step{display:grid;gap:.75rem;align-content:start;border-top:2px solid var(--ink);padding-top:1.25rem}
+.step .mono{color:var(--accent-text)}
+.step h3{font-size:1.5rem}
+.step p{color:var(--muted)}
+.step .eg{color:var(--ink);font-size:.9375rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.75rem .9rem}
+.step .eg b{font-weight:600}
 
-/* Connect */
-.connect h2{font-size:clamp(2.25rem,6vw,3.75rem);max-width:44rem}
-.connect h2 em{color:var(--accent)}
-.connect p{color:var(--muted);margin-top:1rem;max-width:36rem}
-footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.8125rem;border-top:1px solid var(--line)}
-.toast{position:fixed;left:50%;bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);font-size:.875rem;padding:.5rem .9rem;border-radius:8px}
+/* Stories (ink band) */
+.band{background:var(--band);color:var(--on-band)}
+.band .label{color:var(--band-accent)}
+.band .lede{color:var(--band-muted)}
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.story{border:1px solid var(--band-line);border-radius:var(--r);padding:1.6rem;display:grid;gap:1.1rem;align-content:start;background:color-mix(in srgb,var(--band) 93%,var(--on-band))}
+.story-top{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}
+.story h3{font-size:1.5rem}
+.story .tag{display:block;margin-top:.35rem;color:var(--band-muted)}
+.story .metric{text-align:right;flex:none}
+.story .metric b{display:block;font:800 2.25rem/1 var(--font-display);letter-spacing:-.03em;color:var(--band-accent)}
+.story .metric small{display:block;font-size:.75rem;color:var(--band-muted);max-width:9rem;margin-top:.3rem;line-height:1.3}
+.story dl{margin:0;display:grid;gap:.7rem}
+.story dl div{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:1rem}
+.story dt{font:500 .6875rem var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted);padding-top:.2rem}
+.story dd{margin:0;font-size:.9375rem;line-height:1.5}
 
-@media (max-width: 860px){
+/* Spec sheet */
+.specs{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+.shot{position:relative;margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--surface-2);aspect-ratio:4/5;max-width:100%}
+.shot picture,.shot img{width:100%;height:100%}
+.shot img{object-fit:cover}
+.shot figcaption{position:absolute;left:.75rem;bottom:.75rem;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:999px;padding:.3rem .7rem;font:500 .6875rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase}
+.spec-table{margin:0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.spec-table div{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:1rem;padding:.9rem 1.2rem;border-top:1px solid var(--line)}
+.spec-table div:first-child{border-top:0}
+.spec-table dt{font:500 .75rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:.15rem}
+.spec-table dd{margin:0;font-size:.9375rem}
+.spec-table dd small{color:var(--muted);font-size:.875rem}
+.chips{display:flex;flex-wrap:wrap;gap:.35rem}
+.chips span{font-size:.8125rem;border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem;background:var(--bg)}
+
+/* Changelog */
+.changelog{display:grid;border-top:1px solid var(--line)}
+.release-row{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:2rem;padding-block:1.6rem;border-bottom:1px solid var(--line)}
+.ver{display:grid;gap:.25rem;align-content:start}
+.ver b{font:700 1.5rem var(--font-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.ver small{font:400 .75rem var(--font-mono);color:var(--muted)}
+.ver .latest{justify-self:start;font:500 .6875rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--on-accent);border-radius:999px;padding:.15rem .5rem;margin-top:.3rem}
+.notes h3{font-size:1.25rem;letter-spacing:-.015em}
+.notes h3 span{color:var(--muted);font-weight:500}
+.notes ul{list-style:none;margin:.75rem 0 0;padding:0;display:grid;gap:.45rem}
+.notes li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:.75rem;font-size:.9375rem;color:var(--muted)}
+.notes li i{font:500 .6875rem var(--font-mono);font-style:normal;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);padding-top:.25rem}
+
+/* Extras */
+.extras{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.extra{border:1px solid var(--line);border-radius:var(--r);padding:1.25rem;display:grid;gap:.35rem;align-content:start;background:var(--surface)}
+.extra b{font:700 1.125rem var(--font-display);letter-spacing:-.01em}
+.extra p{color:var(--muted);font-size:.9375rem}
+
+/* Plans */
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:stretch}
+.plan{border:1px solid var(--line);border-radius:18px;padding:1.6rem;display:grid;grid-template-rows:auto auto auto 1fr auto;gap:1rem;background:var(--surface);position:relative}
+.plan.featured{border:2px solid var(--accent);box-shadow:var(--shadow)}
+.plan .badge{position:absolute;top:-.8rem;left:1.4rem;background:var(--accent);color:var(--on-accent);font:500 .6875rem var(--font-mono);letter-spacing:.06em;text-transform:uppercase;padding:.25rem .65rem;border-radius:999px}
+.plan h3{font-size:1.375rem}
+.price{display:flex;align-items:baseline;gap:.5rem}
+.price b{font:800 2.25rem/1 var(--font-display);letter-spacing:-.03em}
+.price small{color:var(--muted)}
+.plan > p{color:var(--muted);font-size:.9375rem}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:.55rem;align-content:start}
+.plan li{display:grid;grid-template-columns:1.1rem minmax(0,1fr);gap:.5rem;font-size:.9375rem}
+.plan li::before{content:"";width:.55rem;height:.3rem;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg);margin-top:.5rem}
+.plan .btn{width:100%}
+
+/* FAQ */
+.faq{display:grid;gap:.75rem;max-width:52rem}
+.faq details{border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.2rem;font-weight:600;min-height:52px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.4rem/1 var(--font-body);color:var(--muted);transition:transform .2s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 1.2rem 1.1rem;color:var(--muted)}
+.faq-ask{margin-top:1.5rem;color:var(--muted)}
+.faq-ask a{color:var(--accent-text);font-weight:600}
+
+/* Final CTA */
+.final .wrap{padding-block:clamp(4rem,9vw,6.5rem);display:grid;gap:1.25rem;justify-items:start}
+.final h2{font-size:clamp(2.4rem,6vw,4.25rem);font-weight:800}
+.final h2 em{font-style:normal;color:var(--band-accent)}
+.final .cta-row{margin-top:.75rem}
+.email-line{font:400 .875rem var(--font-mono);color:var(--band-muted);user-select:all}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;padding-block:1.5rem calc(1.5rem + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:.8125rem}
+
+/* Floating demo shortcut + toast */
+.fab{position:fixed;z-index:9;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:none;align-items:center;gap:.55rem;min-height:48px;padding:0 1.1rem 0 .4rem;border-radius:999px;background:var(--ink);color:var(--bg);font:600 .9375rem var(--font-body);text-decoration:none;box-shadow:0 10px 30px -8px #0008;transition:opacity .2s, transform .2s}
+.fab img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.fab[aria-hidden="true"]{opacity:0;transform:translateY(12px);pointer-events:none}
+.toast{position:fixed;z-index:11;left:50%;bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);font-size:.875rem;padding:.55rem 1rem;border-radius:10px;box-shadow:var(--shadow);max-width:calc(100vw - 32px)}
+
+/* Responsive */
+@media (max-width: 980px){
+  .nav ul{display:none}
   .hero .wrap{grid-template-columns:minmax(0,1fr)}
-  .offstage{grid-template-columns:minmax(0,1fr)}
+  .demo{max-width:36rem}
+  .bench{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .bench div:nth-child(-n+2){grid-column:span 3}
+  .bench div:nth-child(n+3){grid-column:span 2}
+  .modules{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:minmax(0,1fr);gap:1.5rem}
+  .stories{grid-template-columns:minmax(0,1fr)}
+  .specs{grid-template-columns:minmax(0,1fr)}
+  .shot{max-width:22rem}
+  .extras{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plans{grid-template-columns:minmax(0,1fr);max-width:32rem;gap:1.5rem}
+  .fab{display:inline-flex}
+  footer .wrap{padding-bottom:calc(5.5rem + env(safe-area-inset-bottom,0px))}
 }
 @media (max-width: 640px){
-  .chips{grid-template-columns:minmax(0,1fr)}
-  .grid{grid-template-columns:minmax(0,1fr)}
-  .act{grid-template-columns:minmax(0,1fr);gap:1rem}
-  .act-label{grid-auto-flow:column;justify-content:start;align-items:baseline;gap:.75rem}
-  .nav ul{gap:.9rem}
-  .nav li.hide-sm{display:none}
-  .roles li{grid-template-columns:minmax(0,1fr)}
-}
-
-/* Anchors land below the sticky header */
-section[id],#ask{scroll-margin-top:4.5rem}
-.prompts button{min-height:36px}
-
-/* Floating "Ask Sandip" shortcut (phones only, hidden while the console is on screen) */
-.fab{display:none}
-
-@media (max-width: 860px){
-  .console{max-width:30rem}
-}
-
-@media (max-width: 640px){
-  /* Nav: one line, 44px tap targets */
-  .nav .wrap{padding-block:.35rem;gap:.5rem}
-  .brand{white-space:nowrap;letter-spacing:.08em;font-size:.75rem}
-  .nav ul{gap:.25rem;flex-wrap:nowrap}
-  .nav a{display:inline-flex;align-items:center;min-height:44px;padding-inline:.5rem;white-space:nowrap}
-
-  /* Hero: tighter rhythm */
-  .hero .wrap{padding-block:2.25rem 2.5rem;gap:2rem}
-  .hero .eyebrow{font-size:.75rem;letter-spacing:.08em}
-  .pitch{font-size:1.0625rem;margin-top:1.1rem}
-
-  /* Proof chips: one grouped list instead of three tall cards */
-  .chips{gap:0;margin-top:1.5rem;background:var(--surface);border:1px solid var(--line-strong);border-radius:12px;overflow:hidden}
-  .chip{border:0;border-radius:0;background:none;padding:.75rem 1rem;border-top:1px solid var(--line-strong)}
-  .chip:first-child{border-top:0}
-
-  /* Links become full-size buttons */
-  .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem;margin-top:1.5rem}
-  .links a,.links button.copy{display:flex;align-items:center;justify-content:center;min-height:46px;padding:.5rem .75rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);text-align:center;overflow-wrap:anywhere}
-  .links > .copy:first-child{grid-column:1 / -1;background:var(--accent);color:var(--bg);border-color:var(--accent);font-weight:600}
-  .links > .copy:first-child:hover{color:var(--bg)}
-  .links > :nth-child(4){grid-column:1 / -1}
-  .status{font-size:.875rem;align-items:flex-start}
-  .status .dot{margin-top:.45rem;margin-left:4px}
-
-  /* Ask console */
-  .console-body{padding:1rem}
-  .log{max-height:15rem;overscroll-behavior:contain}
-  .msg{font-size:.9375rem}
-  .prompts{gap:.5rem}
-  .prompts button{min-height:40px;padding:.5rem .85rem;font-size:.875rem}
-  form.ask input{min-height:46px}
-
-  /* Readable minimum for small labels */
-  .tag,.act-label .role,.console-head span{font-size:.75rem}
-
-  /* Sections */
-  section.band > .wrap{padding-block:3rem}
-  .section-head{margin-bottom:1.75rem}
-  h2{font-size:2.125rem}
-  .act{padding-block:1.5rem}
-  .act-body h3,.card h3{font-size:1.5rem}
-  .card{padding:1.15rem;gap:.6rem}
-  .card .proof a{display:inline-block;padding-block:.5rem}
-  .offstage{gap:1.5rem}
-  .connect h2{font-size:2.25rem}
-  footer .wrap{padding-block:1.5rem calc(5rem + env(safe-area-inset-bottom,0px))}
-
-  .fab{position:fixed;z-index:6;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:.5rem;min-height:48px;padding:0 1.1rem;border-radius:999px;background:var(--accent);color:var(--bg);font:600 .9375rem var(--font-body);text-decoration:none;box-shadow:0 8px 24px #0006;transition:opacity .2s,transform .2s}
-  .fab[aria-hidden="true"]{opacity:0;transform:translateY(12px);pointer-events:none}
-  .fab .dots i{background:var(--bg)}
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .nav .wrap{min-height:58px;gap:.75rem}
+  .hero h1{font-size:clamp(2.3rem,10.5vw,3rem)}
+  .cta-row{display:grid;grid-template-columns:minmax(0,1fr);width:100%}
+  .cta-row .btn{width:100%}
+  .bench{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bench div:nth-child(n){grid-column:auto}
+  .bench div:first-child{grid-column:1 / -1}
+  .bench div{padding:1.1rem 1rem}
+  .modules,.extras{grid-template-columns:minmax(0,1fr)}
+  .module{padding:1.25rem}
+  .story{padding:1.25rem}
+  .story-top{flex-direction:column}
+  .story .metric{text-align:left}
+  .story .metric small{max-width:none}
+  .story dl div{grid-template-columns:minmax(0,1fr);gap:.15rem}
+  .spec-table div{grid-template-columns:minmax(0,1fr);gap:.2rem;padding:.8rem 1rem}
+  .release-row{grid-template-columns:minmax(0,1fr);gap:.75rem;padding-block:1.25rem}
+  .ver{grid-auto-flow:column;justify-content:start;align-items:baseline;gap:.75rem}
+  .ver .latest{margin-top:0}
+  .notes li{grid-template-columns:minmax(0,1fr);gap:0}
+  .logos .wrap{gap:.75rem}
+  .logos ul{gap:.5rem 1.25rem}
+  .logos li{font-size:.9375rem}
+  .demo-body{padding:.9rem}
+  .prompts button{min-height:40px;font-size:.875rem}
+  .log{height:15rem}
 }
 @media (max-width: 360px){
-  .nav li:not(:last-child){display:none}
-  .brand{font-size:.7rem}
-  .links{grid-template-columns:minmax(0,1fr)}
-  .links > *{grid-column:auto!important}
-  h2{font-size:1.9rem}
-}
-
-/* Touch screens of any size (tablets included): comfortable tap areas */
-@media (pointer: coarse){
-  .nav a{display:inline-flex;align-items:center;min-height:44px}
-  .links a,.links button.copy{padding-block:.6rem}
-  .prompts button{min-height:40px}
-  .card .proof a{display:inline-block;padding-block:.5rem}
+  .brand span{display:none}
 }
 </style>
 </head>
 <body>
 
-<header class="nav">
+<header class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="#top">Sandip Prakash</a>
-    <ul>
-      <li class="hide-sm"><a href="#story">Story</a></li>
-      <li><a href="#work">Work</a></li>
-      <li class="hide-sm"><a href="#offstage">Off stage</a></li>
-      <li><a class="ask" href="#ask">Ask Sandip</a></li>
-    </ul>
+    <a class="brand" href="#top" aria-label="Sandip Prakash, home"><b>sandip</b><span>v6.0</span></a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#modules">Features</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#specs">Specs</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#plans">Plans</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#plans">Hire Sandip</a>
   </div>
 </header>
 
@@ -278,197 +349,409 @@ section[id],#ask{scroll-margin-top:4.5rem}
   <section class="hero">
     <div class="wrap">
       <div>
-        <p class="eyebrow">Product marketing · GTM · AI products</p>
-        <h1 style="margin-top:1rem">Sandip <em>Prakash</em></h1>
-        <p class="pitch">I started as an <strong>embedded systems engineer</strong>, founded a <strong>D2C brand</strong>, ran <strong>GTM for a creative agency</strong>, and now build <strong>AI products</strong> at Cornell Tech. I turn technical products into stories people buy.</p>
-        <div class="chips">
-          <div class="chip"><b>Cornell MBA</b><span>Class of 2026</span></div>
-          <div class="chip"><b>General Motors</b><span>Embedded systems, via KPIT Technologies</span></div>
-          <div class="chip"><b>Founder, Unhide</b><span>D2C footwear, integrated into Pocbuc</span></div>
+        <a class="release" href="#changelog"><b>New</b><span>v6.0 · Product Marketing &amp; Growth at Arya Health</span></a>
+        <h1>Customer insight in. <em>Market-ready</em> positioning out.</h1>
+        <p class="lede">Sandip is a product marketer with an engineering core. He turns what customers actually say into positioning, go-to-market and growth for AI, SaaS, consumer and enterprise products.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#plans">Hire Sandip <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/resume.pdf" target="_blank" rel="noopener">Read the spec sheet</a>
         </div>
-        <div class="links">
-          <button class="copy" type="button" id="copy-email" data-email="sandipconnects@gmail.com">sandipconnects@gmail.com</button>
-          <a href="/resume.pdf" id="resume-link" target="_blank" rel="noopener">View resume</a>
-          <a href="https://www.linkedin.com/in/sandipprakash/" id="linkedin-link" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-        <p class="status"><span class="dot" aria-hidden="true"></span>Open to product marketing and product strategy roles.</p>
+        <div class="meta mono"><span>Cornell MBA ’26</span><span>STEM OPT eligible</span><span>New York</span></div>
       </div>
 
-      <aside class="console" id="ask" aria-label="Ask Sandip">
-        <div class="portrait">
-          <picture><source srcset="pfp.webp" type="image/webp"><img src="pfp.jpeg" alt="Sandip Prakash" class="pfp" width="960" height="1039" decoding="async" onerror="this.closest('picture').hidden=true;this.closest('picture').nextElementSibling.hidden=false"></picture>
-          <span class="mono" hidden>SP</span>
+      <div class="demo" id="demo" aria-label="Ask Sandip live demo">
+        <div class="chrome">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="mono">ask · sandipprakash.com</span>
+          <span class="live">Live</span>
         </div>
-        <div class="console-body">
-          <div class="console-head"><b>Ask Sandip</b><span>Start here</span></div>
-          <p class="console-sub">Ask about PMM fit, the engineer-to-marketer story, Stu, or where I fit best.</p>
+        <div class="demo-body">
+          <div class="who">
+            <picture><source srcset="assets/avatar.webp" type="image/webp"><img src="assets/avatar.jpg" alt="" width="44" height="44"></picture>
+            <div><b>Ask Sandip</b><small>AI version, trained on his resume and notes</small></div>
+          </div>
           <div class="log" id="log" aria-live="polite">
-            <div class="msg a">Hi, I'm Sandip. Pick a question below or type your own.</div>
+            <div class="msg a">Hi, I'm Sandip's AI. Ask me anything about his work, results, or what he's looking for next.</div>
           </div>
           <div class="prompts" id="prompts">
-            <button type="button">30-second summary</button>
-            <button type="button">Why product marketing?</button>
-            <button type="button">What is Stu?</button>
-            <button type="button">Where do I fit best?</button>
+            <button type="button">Give me the 30-second pitch</button>
+            <button type="button">What results has he driven?</button>
+            <button type="button">What does he do at Arya Health?</button>
+            <button type="button">Why an engineer turned PMM?</button>
           </div>
           <form class="ask" id="ask-form">
-            <label for="ask-input" class="eyebrow" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Your question</label>
-            <input id="ask-input" type="text" placeholder="Type your question…" autocomplete="off">
-            <button type="submit">Ask</button>
+            <label for="ask-input" class="sr">Your question</label>
+            <input id="ask-input" type="text" maxlength="500" placeholder="Ask about experience, results, fit…" autocomplete="off" enterkeyhint="send">
+            <button type="submit" id="ask-btn">Ask</button>
           </form>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="band" id="story">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">The story, in four acts</p>
-        <h2>One career, a few different hats.</h2>
-        <p>Each act taught me something the next one needed. Engineering taught me how products work, founding taught me how they sell, and marketing taught me how to explain both.</p>
-      </div>
-
-      <div class="acts">
-        <article class="act">
-          <div class="act-label"><span class="num">Act I</span><span class="role">The engineer</span></div>
-          <div class="act-body">
-            <h3>Building the thing</h3>
-            <p>Shiv Nadar University, then hardware. Research in assistive technology and power electronics, and modeling work for General Motors.</p>
-            <ul class="roles">
-              <li><div><b>General Motors, via KPIT Technologies</b><br><span>Embedded systems and power generation modeling</span></div></li>
-              <li><div><b>Undergraduate research</b><br><span>Springer publications; HWWE Best Young Researcher Award</span></div></li>
-              <li><div><b>IEEE</b><br><span>Vice Chair</span></div></li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="act">
-          <div class="act-label"><span class="num">Act II</span><span class="role">The founder</span></div>
-          <div class="act-body">
-            <h3>Selling the thing</h3>
-            <p>I founded Unhide, a D2C footwear brand, and learned distribution, pricing, and brand from zero. It was later strategically integrated into Pocbuc, a premium footwear brand.</p>
-            <ul class="roles">
-              <li><div><b>Unhide</b><br><span>Founder · D2C footwear</span></div></li>
-              <li><div><b>Kutung Design Labs</b><br><span>Growth strategist · UI/UX agency and Unhide's investor</span></div></li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="act">
-          <div class="act-label"><span class="num">Act III</span><span class="role">The marketer</span></div>
-          <div class="act-body">
-            <h3>Telling the story</h3>
-            <p>Product marketing and go-to-market for other people's products, across D2C clients and startups, including brands like Tata.</p>
-            <ul class="roles">
-              <li><div><b>Millennial Labs</b><br><span>CMO and GTM lead · creative-first marketing agency</span></div></li>
-              <li><div><b>SPI Edge</b><br><span>Product marketing · startup incubator that builds startups</span></div></li>
-              <li><div><b>TEDx Gateway Mumbai</b><br><span>Curator</span></div></li>
-              <li><div><b>COVID second wave, India</b><br><span>Coordinated crisis logistics</span></div></li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="act">
-          <div class="act-label"><span class="num">Act IV</span><span class="role">The builder</span></div>
-          <div class="act-body">
-            <h3>Building and telling, together</h3>
-            <p>At Cornell Tech I bring all three together: shipping AI products, running customer discovery, and positioning them for the market.</p>
-            <ul class="roles">
-              <li><div><b>Stu</b><br><span>Co-founder · AI property management</span></div></li>
-              <li><div><b>Arya Health</b><br><span>Product marketing and GTM · healthcare AI</span></div></li>
-              <li><div><b>Samsung TV Plus</b><br><span>Cornell Tech product studio</span></div></li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="band" id="work">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Featured work</p>
-        <h2>Things I've built and launched.</h2>
-      </div>
-      <div class="grid">
-        <article class="card">
-          <span class="tag">AI startup</span>
-          <h3>Stu</h3>
-          <p>AI property management that automates maintenance from tenant intake to vendor dispatch, for operators with 50 to 500 units. Co-founded with a technical partner; I led discovery, pricing, positioning, and the pitch.</p>
-          <p class="proof">30 landlord interviews · v1 shipped · 2 properties in pilot</p>
-        </article>
-        <article class="card">
-          <span class="tag">Samsung × Cornell Tech</span>
-          <h3>Samsung TV Plus</h3>
-          <p>Reframed TV from a passive product into an interactive, social platform, working with the Samsung TV Plus team.</p>
-          <p class="proof">Concept approved and now being implemented</p>
-        </article>
-        <article class="card">
-          <span class="tag">Healthcare AI</span>
-          <h3>Arya Health</h3>
-          <p>Product marketing and GTM for a B2B healthcare AI company: positioning, paid acquisition, social content, case studies, and sales enablement.</p>
-          <p class="proof">Add a headline metric here</p>
-        </article>
-        <article class="card">
-          <span class="tag">Founder</span>
-          <h3>Unhide</h3>
-          <p>A D2C footwear brand I founded and grew from scratch, backed by Kutung Design Labs.</p>
-          <p class="proof">Strategically integrated into Pocbuc</p>
-        </article>
-        <article class="card">
-          <span class="tag">Open source</span>
-          <h3>Unslop</h3>
-          <p>A free, open-source skill file that helps LLMs write prose that doesn't read as AI-generated.</p>
-          <p class="proof"><a href="https://unslop-tau.vercel.app" target="_blank" rel="noopener">unslop-tau.vercel.app ↗</a></p>
-        </article>
-        <article class="card">
-          <span class="tag">Research</span>
-          <h3>Code Buddy</h3>
-          <p>A thesis on a questioning-only LLM debugging partner, studying how it affects students' ability to judge what they actually understand.</p>
-          <p class="proof">Study in progress</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="band" id="offstage">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Off stage</p>
-        <h2>The rest of the story.</h2>
-      </div>
-      <div class="offstage">
-        <div class="off">
-          <h3>On stage</h3>
-          <p>Theatre, Toastmasters, and TEDx curation. Storytelling is how I think, and it's the core of how I do marketing.</p>
-        </div>
-        <div class="off">
-          <h3>On the mat</h3>
-          <p>I teach yoga. It's the one place where I'm not trying to ship anything.</p>
-        </div>
-        <div class="off">
-          <h3>Over chai</h3>
-          <p>Films, wordplay, and long conversations about strategy, behavioral psychology, and systems thinking.</p>
-          <div class="langs">
-            <span>English</span><span>Hindi</span><span>Tamil</span><span>Kannada <i>fluent</i></span>
-          </div>
+          <p class="disclaimer">Answers come only from Sandip's own notes and can be imperfect. The real Sandip is at sandipconnects@gmail.com.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="band connect" id="connect">
+  <section class="logos" aria-label="Organizations">
     <div class="wrap">
-      <p class="eyebrow">Let's connect</p>
-      <h2 style="margin-top:1rem">Hiring for product marketing? <em>Let's talk over chai.</em></h2>
-      <p>Whether it's a role, a product to launch, or just a good conversation, I'd like to hear from you.</p>
-      <div class="links">
-        <button class="copy" type="button" data-email="sandipconnects@gmail.com">Copy email</button>
-        <a href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
-        <a href="https://www.linkedin.com/in/sandipprakash/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="#ask">Ask Sandip</a>
+      <span class="mono">Deployed with teams at</span>
+      <ul>
+        <li>General Motors</li>
+        <li>Samsung TV Plus</li>
+        <li>Tata Group</li>
+        <li>Arya Health</li>
+        <li>Cornell</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="benchmarks">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Benchmarks</p>
+        <h2>Measured in production, not in a demo.</h2>
       </div>
+      <div class="bench">
+        <div><b>2,500+</b><span>customer interviews analyzed</span><small>10 cities · 5 languages</small></div>
+        <div><b>2× → 7×</b><span>conversion ROAS</span><small>Meta + Google</small></div>
+        <div><b>~200%</b><span>business turnaround, loss to profit</span><small>Millennial Labs</small></div>
+        <div><b>80%</b><span>faster GTM production</span><small>Arya Health</small></div>
+        <div><b>20+</b><span>brands taken to market</span><small>6+ industries</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight" id="modules">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Features</p>
+        <h2>One hire. The whole go-to-market stack.</h2>
+        <p class="lede">Six modules, each with results from real companies behind it.</p>
+      </div>
+      <div class="modules">
+        <article class="module">
+          <span class="mono">Insight</span>
+          <h3>Customer research at scale</h3>
+          <p>Interviews, journey maps and teardowns turned into segments, ICPs and the few insights that change the plan.</p>
+          <p class="proof">2,500+ interviews; insight-to-decision 90% faster with an OpenAI workflow</p>
+        </article>
+        <article class="module">
+          <span class="mono">Positioning</span>
+          <h3>Messaging that differentiates</h3>
+          <p>One story the market can repeat, with the proof points sales needs to back it up.</p>
+          <p class="proof">Arya Health's first positioning, across 8 AI workflows and 120+ customers</p>
+        </article>
+        <article class="module">
+          <span class="mono">Go-to-market</span>
+          <h3>Launch systems, not one-off launches</h3>
+          <p>Product pages, case studies, enablement and launch plans that teams can run again next quarter.</p>
+          <p class="proof">200-attendee rebrand launch; GTM framework used by 25+ founders</p>
+        </article>
+        <article class="module">
+          <span class="mono">Growth</span>
+          <h3>Full-funnel growth</h3>
+          <p>Segmentation, creative testing and funnel optimization across paid, lifecycle and content.</p>
+          <p class="proof">Conversion ROAS from 2× to 7× on Meta and Google</p>
+        </article>
+        <article class="module">
+          <span class="mono">AI-native</span>
+          <h3>Workflows that ship faster</h3>
+          <p>LLM pipelines for research, content and market intelligence, built with Claude, OpenAI, n8n and Apify.</p>
+          <p class="proof">GTM production cut from 7–10 days to about 2</p>
+        </article>
+        <article class="module">
+          <span class="mono">Engineering core</span>
+          <h3>Understands what's under the hood</h3>
+          <p>An electrical engineer who shipped embedded systems before writing a single positioning doc.</p>
+          <p class="proof">12,000+ test cases at 99.99% accuracy for GM engine systems</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="how">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">How it works</p>
+        <h2>From conversation to conversion.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="mono">Step 1</span>
+          <h3>Listen</h3>
+          <p>Start with customers, not opinions. Interview until the pattern is obvious.</p>
+          <p class="eg"><b>Samsung TV Plus:</b> 5 personas and 4 competitive teardowns reframed the problem from content acquisition to attention retention.</p>
+        </div>
+        <div class="step">
+          <span class="mono">Step 2</span>
+          <h3>Position</h3>
+          <p>Find the one story the market can repeat, then pressure-test it with sales and customers.</p>
+          <p class="eg"><b>D2C brand at SPI Edge:</b> 80% of repeat buyers came back for loyalty, so the brand moved off sustainability and raised on Shark Tank India.</p>
+        </div>
+        <div class="step">
+          <span class="mono">Step 3</span>
+          <h3>Ship and scale</h3>
+          <p>Turn the story into a system: pages, launches, enablement, experiments, and the metrics to prove it.</p>
+          <p class="eg"><b>Millennial Labs:</b> ROAS from 2× to 7× and a ~200% turnaround from loss to profit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="stories">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Customer stories</p>
+        <h2>Results in production.</h2>
+      </div>
+      <div class="stories">
+        <article class="story">
+          <div class="story-top">
+            <div><h3>Arya Health</h3><span class="tag mono">Healthcare AI · Series A</span></div>
+            <div class="metric"><b>80%</b><small>faster GTM production</small></div>
+          </div>
+          <dl>
+            <div><dt>Challenge</dt><dd>8 AI workflows and 120+ customers, with no shared positioning.</dd></div>
+            <div><dt>Approach</dt><dd>Built the first positioning and messaging foundation, then the system around it: product pages, case studies, enablement and a 200-attendee rebrand launch.</dd></div>
+            <div><dt>Outcome</dt><dd>Narratives anchored on 60% lower scheduling effort and $5M+ in annual customer value. Production time down from 7–10 days to about 2.</dd></div>
+          </dl>
+        </article>
+        <article class="story">
+          <div class="story-top">
+            <div><h3>Samsung TV Plus</h3><span class="tag mono">Streaming · Cornell BigCo Studio</span></div>
+            <div class="metric"><b>50+ → 4</b><small>opportunities narrowed to priorities</small></div>
+          </div>
+          <dl>
+            <div><dt>Challenge</dt><dd>A free streaming service competing on content volume.</dd></div>
+            <div><dt>Approach</dt><dd>Customer research, journey mapping, 5 personas and 4 competitive teardowns.</dd></div>
+            <div><dt>Outcome</dt><dd>Reframed the problem as attention retention. The social co-viewing concept was selected by Samsung for implementation.</dd></div>
+          </dl>
+        </article>
+        <article class="story">
+          <div class="story-top">
+            <div><h3>Millennial Labs</h3><span class="tag mono">Creative agency · 28-person team</span></div>
+            <div class="metric"><b>~200%</b><small>business turnaround</small></div>
+          </div>
+          <dl>
+            <div><dt>Challenge</dt><dd>An agency running at a loss on custom, hard-to-price work.</dd></div>
+            <div><dt>Approach</dt><dd>Productized the deliverables, redesigned pricing and delivery, and led go-to-market for 20+ brands.</dd></div>
+            <div><dt>Outcome</dt><dd>Loss to profitability with 85% client retention, and ROAS from 2× to 7×.</dd></div>
+          </dl>
+        </article>
+        <article class="story">
+          <div class="story-top">
+            <div><h3>D2C consumer brand</h3><span class="tag mono">Via SPI Edge incubator</span></div>
+            <div class="metric"><b>80%</b><small>of repeat buyers chose loyalty</small></div>
+          </div>
+          <dl>
+            <div><dt>Challenge</dt><dd>A brand selling on sustainability that didn't know why customers came back.</dd></div>
+            <div><dt>Approach</dt><dd>Research drawn from 2,500+ interviews across 10 cities and 5 languages.</dd></div>
+            <div><dt>Outcome</dt><dd>Repositioned around loyalty, enabling the rebrand and a Shark Tank India raise.</dd></div>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="specs">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Under the hood</p>
+        <h2>Spec sheet.</h2>
+      </div>
+      <div class="specs">
+        <figure class="shot">
+          <picture><source srcset="assets/portrait.webp" type="image/webp"><img src="assets/portrait.jpg" alt="Sandip Prakash in Cornell graduation regalia" width="800" height="1000" loading="lazy"></picture>
+          <figcaption>Product shot · Cornell, 2026</figcaption>
+        </figure>
+        <dl class="spec-table">
+          <div><dt>Model</dt><dd>Sandip Prakash Badrappan</dd></div>
+          <div><dt>Current release</dt><dd>v6.0 · Product Marketing &amp; Growth, Arya Health</dd></div>
+          <div><dt>Training data</dt><dd>2,500+ customer interviews · 20+ brand launches · 6+ industries</dd></div>
+          <div><dt>Core</dt><dd>B.S. Electrical &amp; Electronics Engineering, Shiv Nadar University <small>· Best Young Researcher Award</small></dd></div>
+          <div><dt>Fine-tuning</dt><dd>Cornell MBA, 2026 <small>· GPA 3.9 · top 10% · Merit Scholar</small></dd></div>
+          <div><dt>Languages</dt><dd>English, Hindi, Tamil, Kannada</dd></div>
+          <div><dt>Toolchain</dt><dd><span class="chips"><span>Figma</span><span>HubSpot</span><span>Google Ads</span><span>Meta Ads</span><span>n8n</span><span>Apify</span><span>SQL</span><span>Python</span><span>Claude</span><span>OpenAI</span></span></dd></div>
+          <div><dt>Availability</dt><dd>Full-time, 2026 <small>· STEM OPT eligible · New York</small></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight" id="changelog">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Changelog</p>
+        <h2>Six major releases since 2018.</h2>
+      </div>
+      <div class="changelog">
+        <article class="release-row">
+          <div class="ver"><b>v6.0</b><small>Jul 2026</small><span class="latest">Latest</span></div>
+          <div class="notes">
+            <h3>Product Marketing &amp; Growth <span>· Arya Health</span></h3>
+            <ul>
+              <li><i>New</i><span>First positioning and messaging foundation for a Series A healthcare AI company.</span></li>
+              <li><i>Improved</i><span>GTM production time cut 80% with AI-enabled workflows.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="release-row">
+          <div class="ver"><b>v5.0</b><small>2025–2026</small></div>
+          <div class="notes">
+            <h3>MBA and AI builder <span>· Cornell</span></h3>
+            <ul>
+              <li><i>New</i><span>Samsung TV Plus consulting; concept selected for implementation.</span></li>
+              <li><i>New</i><span>Co-founded Stu, an AI execution layer for property managers. Shipped v1 to 2 properties.</span></li>
+              <li><i>New</i><span>Unslop, an open-source skill that rewrites AI copy until it sounds human.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="release-row">
+          <div class="ver"><b>v4.0</b><small>Jun 2024</small></div>
+          <div class="notes">
+            <h3>Head of Business &amp; Marketing Strategy <span>· Millennial Labs</span></h3>
+            <ul>
+              <li><i>New</i><span>Led go-to-market for 20+ B2B and D2C brands with a 28-person team.</span></li>
+              <li><i>Improved</i><span>Agency turned from loss to profit; ROAS from 2× to 7×.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="release-row">
+          <div class="ver"><b>v3.0</b><small>Jan 2023</small></div>
+          <div class="notes">
+            <h3>Project Manager, AI Product <span>· SPI Edge</span></h3>
+            <ul>
+              <li><i>New</i><span>Research engine: 2,500+ interviews feeding positioning for 6+ ventures.</span></li>
+              <li><i>Improved</i><span>Insight-to-decision time cut 90% with an OpenAI workflow.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="release-row">
+          <div class="ver"><b>v2.0</b><small>Mar 2021</small></div>
+          <div class="notes">
+            <h3>Co-founder, Unhide <span>· Kutung Design Labs</span></h3>
+            <ul>
+              <li><i>New</i><span>Built a D2C footwear brand from 0 to launch in 100 days across 5 cities.</span></li>
+              <li><i>Improved</i><span>LinkedIn reach up 7.5× in 3 months with zero budget.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="release-row">
+          <div class="ver"><b>v1.0</b><small>Jun 2018</small></div>
+          <div class="notes">
+            <h3>Embedded Systems Engineer <span>· General Motors via KPIT</span></h3>
+            <ul>
+              <li><i>New</i><span>Hired in the top 1% of 1,000+ engineers.</span></li>
+              <li><i>New</i><span>12,000+ test cases validated at 99.99% accuracy for GM engine systems.</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tint" id="extras">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Also included</p>
+        <h2>Included at no extra cost.</h2>
+      </div>
+      <div class="extras">
+        <div class="extra"><b>Yoga instructor</b><p>Certified, with 300+ people trained.</p></div>
+        <div class="extra"><b>TEDx curator</b><p>Curated TEDx Gateway. Toastmasters and a theatre background.</p></div>
+        <div class="extra"><b>Crisis operations</b><p>Coordinated 5,000+ oxygen units across 9 cities during India's COVID second wave.</p></div>
+        <div class="extra"><b>Researcher</b><p>Springer-published work in assistive technology and power electronics.</p></div>
+        <div class="extra"><b>Four languages</b><p>English, Hindi and Tamil natively; Kannada fluently.</p></div>
+        <div class="extra"><b>Runs on chai</b><p>Also films and wordplay. Best meetings happen over a cup.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="plans">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Plans</p>
+        <h2>Choose your deployment.</h2>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <h3>Coffee chat</h3>
+          <div class="price"><b>Free</b><small>20 minutes</small></div>
+          <p>Compare notes on positioning, AI-powered GTM, or a launch you're planning.</p>
+          <ul>
+            <li>Positioning gut-check</li>
+            <li>AI workflows for marketing teams</li>
+            <li>Chai optional</li>
+          </ul>
+          <a class="btn btn-ghost" href="mailto:sandipconnects@gmail.com?subject=Coffee%20chat" data-copy>Book a chat</a>
+        </article>
+        <article class="plan featured">
+          <span class="badge">Recommended</span>
+          <h3>Full-time</h3>
+          <div class="price"><b>Let's talk</b></div>
+          <p>Product marketing, growth and product strategy roles.</p>
+          <ul>
+            <li>Positioning and messaging ownership</li>
+            <li>Launches and sales enablement</li>
+            <li>A customer research engine</li>
+            <li>AI-native GTM workflows</li>
+            <li>Available 2026 · STEM OPT eligible</li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:sandipconnects@gmail.com?subject=Full-time%20role" data-copy>Request a demo</a>
+        </article>
+        <article class="plan">
+          <h3>Founding marketer</h3>
+          <div class="price"><b>Let's talk</b></div>
+          <p>For seed to Series B startups hiring their first GTM lead.</p>
+          <ul>
+            <li>0 to 1 positioning and ICP</li>
+            <li>Pricing and packaging</li>
+            <li>Demand generation on a budget</li>
+            <li>Founder and investor storytelling</li>
+          </ul>
+          <a class="btn btn-ghost" href="mailto:sandipconnects@gmail.com?subject=Founding%20marketer" data-copy>Start a conversation</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec tight" id="faq">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">FAQ</p>
+        <h2>Questions, answered.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Why a product marketer with an engineering background?</summary>
+          <p>The hardest part of product marketing is understanding a product well enough to simplify it without making it wrong. Sandip validated 12,000+ test cases on GM engine systems before he ever wrote positioning.</p>
+        </details>
+        <details>
+          <summary>Is Sandip available?</summary>
+          <p>Yes. He's open to full-time product marketing, growth and product strategy roles, and to founding-marketer roles at early-stage startups. Cornell MBA 2026, STEM OPT eligible, based in New York.</p>
+        </details>
+        <details>
+          <summary>Which industries has he worked in?</summary>
+          <p>Healthcare AI, streaming, consumer D2C, B2B services and automotive, across 6+ industries and 20+ brands.</p>
+        </details>
+        <details>
+          <summary>Is the chat really AI?</summary>
+          <p>Yes. It runs on Claude and answers only from a knowledge file Sandip wrote about himself. When it doesn't know something, it says so and points you to his email.</p>
+        </details>
+      </div>
+      <p class="faq-ask">Still curious? <a href="#demo">Ask the product itself.</a></p>
+    </div>
+  </section>
+
+  <section class="band final" id="contact">
+    <div class="wrap">
+      <p class="label">Get started</p>
+      <h2>Ready to deploy <em>Sandip</em>?</h2>
+      <p class="lede">Start with a 20-minute conversation.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:sandipconnects@gmail.com?subject=Let's%20talk" data-copy>Email Sandip <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-band" href="https://www.linkedin.com/in/sandipprakash/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-band" href="/resume.pdf" target="_blank" rel="noopener">Spec sheet (resume)</a>
+      </div>
+      <p class="email-line">sandipconnects@gmail.com</p>
     </div>
   </section>
 </main>
@@ -476,79 +759,101 @@ section[id],#ask{scroll-margin-top:4.5rem}
 <footer>
   <div class="wrap">
     <span>© 2026 Sandip Prakash</span>
-    <span>sandipprakash.com</span>
+    <span>Positioned, written and shipped like a product launch.</span>
   </div>
 </footer>
 
-<a class="fab" id="fab" href="#ask" aria-hidden="true" tabindex="-1"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Ask Sandip</a>
-<div class="toast" id="toast" hidden></div>
+<a class="fab" id="fab" href="#demo" aria-hidden="true" tabindex="-1"><picture><source srcset="assets/avatar.webp" type="image/webp"><img src="assets/avatar.jpg" alt="" width="36" height="36"></picture>Ask Sandip</a>
+<div class="toast" id="toast" role="status" hidden></div>
 
 <script>
 (function(){
-  const answers = [
-    {k:["summary","30","who","about","yourself","intro"], a:"I'm a product marketer who started as an embedded systems engineer. I built hardware for General Motors via KPIT, founded a D2C footwear brand called Unhide, ran GTM for a creative agency, and I'm now finishing my MBA at Cornell, where I co-built Stu, an AI property management startup."},
-    {k:["why","product marketing","pmm","marketing"], a:"Because I've sat on every side of the product. As an engineer I knew how things worked. As a founder I learned that a good product doesn't sell itself. Product marketing is where both meet: understanding the tech deeply enough to explain why it matters to someone who'll never read the spec."},
-    {k:["stu","property","startup","landlord"], a:"Stu automates property maintenance from tenant intake to vendor dispatch, for operators with 50 to 500 units. Property managers on tools like Buildium or AppFolio still coordinate repairs by hand. We ran 30 landlord interviews, shipped v1, and have 2 properties in a pilot."},
-    {k:["fit","best","role","hire","where"], a:"Technical products that need a clear story: AI platforms, developer tools, hardware, and energy. I'm strongest where a PMM has to translate between engineering and the market, from positioning and launches to sales enablement."},
-    {k:["engineer","embedded","gm","general motors","kpit","hardware"], a:"I worked on embedded systems and power generation modeling for General Motors via KPIT Technologies. Before that I published undergraduate research with Springer on assistive tech and power electronics, which won the HWWE Best Young Researcher Award."},
-    {k:["unhide","footwear","founder","d2c"], a:"Unhide was my D2C footwear brand. I built it from zero, with Kutung Design Labs as an investor, and it was later strategically integrated into Pocbuc, a premium footwear brand."},
-    {k:["samsung","tv"], a:"At Cornell Tech I worked with the Samsung TV Plus team on turning TV from something you watch alone into an interactive, social platform. The concept was approved and is being implemented."},
-    {k:["yoga","hobby","hobbies","chai","theatre","tedx","fun"], a:"I teach yoga, did theatre and Toastmasters, and curated TEDx Gateway Mumbai. Outside work it's films, wordplay, and a lot of chai."}
+  const EMAIL='sandipconnects@gmail.com';
+  // Used only when the AI endpoint is unreachable (e.g. local preview without an API key).
+  const fallback=[
+    {k:['pitch','summary','30','who','about','intro','yourself'],a:"Sandip is a product marketer with an engineering core. He started as an embedded systems engineer at General Motors (via KPIT), co-founded a D2C brand, analyzed 2,500+ customer interviews at SPI Edge, led strategy at Millennial Labs, and now does product marketing and growth at Arya Health while finishing his Cornell MBA."},
+    {k:['result','impact','metric','number','achieve','driven'],a:"- ROAS from 2× to 7× on Meta and Google\n- ~200% business turnaround from loss to profit at Millennial Labs\n- 80% faster GTM production at Arya Health\n- 20+ brands taken to market across 6+ industries\n- 2,500+ customer interviews behind the strategy"},
+    {k:['arya','health','current','now','today'],a:"At Arya Health, a Series A healthcare AI company, Sandip built the first positioning and messaging foundation across 8 AI workflows and 120+ customers, led a 200-attendee rebrand launch, and built product pages, case studies and sales enablement. AI workflows cut GTM production from 7–10 days to about 2."},
+    {k:['engineer','why','pmm','background','technical'],a:"Because the hardest part of product marketing is understanding the product well enough to simplify it without making it wrong. Sandip validated 12,000+ test cases for GM engine systems before moving into GTM, so he can talk to engineers and buyers in their own language."},
+    {k:['samsung','tv'],a:"At Cornell BigCo Studio, Sandip reframed Samsung TV Plus's challenge from content acquisition to attention retention, built 5 personas and 4 competitive teardowns, and narrowed 50+ opportunities to 4 priorities. The social co-viewing concept was selected for implementation."},
+    {k:['available','hire','role','looking','fit','visa','opt'],a:"He's open to full-time product marketing, growth and product strategy roles, plus founding-marketer roles at early-stage startups. Cornell MBA 2026, STEM OPT eligible, based in New York. Email "+EMAIL+" to start a conversation."},
   ];
-  const fallback = "I don't have a ready answer for that one. Email me at sandipconnects@gmail.com and I'll reply personally.";
-  const log = document.getElementById('log');
-  function add(text, cls){ const d=document.createElement('div'); d.className='msg '+cls; d.textContent=text; log.appendChild(d); log.scrollTop=log.scrollHeight; }
-  function answer(q){
-    const s=q.toLowerCase(); let best=null,score=0;
-    for(const item of answers){ const n=item.k.filter(k=>s.includes(k)).length; if(n>score){score=n;best=item;} }
-    return best?best.a:fallback;
-  }
-  let busy=false;
-  const controls=()=>[...document.querySelectorAll('#prompts button, #ask-form button, #ask-input')];
-  function setBusy(b){ busy=b; controls().forEach(c=>c.disabled=b); }
+  const log=document.getElementById('log'), form=document.getElementById('ask-form'), input=document.getElementById('ask-input'), btn=document.getElementById('ask-btn'), prompts=document.getElementById('prompts');
   const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function ask(q){
+  const history=[]; let busy=false;
+
+  function bubble(cls,text){const d=document.createElement('div');d.className='msg '+cls;if(text)d.textContent=text;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
+  function setBusy(b){busy=b;btn.disabled=b;prompts.querySelectorAll('button').forEach(x=>x.disabled=b);}
+  function canned(q){const s=q.toLowerCase();let best=null,score=0;for(const f of fallback){const n=f.k.filter(k=>s.includes(k)).length;if(n>score){score=n;best=f;}}return best?best.a:"I don't have that detail here. The real Sandip can answer at "+EMAIL+".";}
+  const wait=ms=>new Promise(r=>setTimeout(r,ms));
+
+  // Reveals text smoothly as it streams in.
+  function typer(el){
+    let shown='',target='',done=false,resolveEnd;
+    const ended=new Promise(r=>resolveEnd=r);
+    function tick(){
+      if(shown.length<target.length){
+        const step=reduce?target.length:Math.max(1,Math.ceil((target.length-shown.length)/18));
+        shown=target.slice(0,shown.length+step);el.textContent=shown;log.scrollTop=log.scrollHeight;
+      }
+      if(done&&shown.length>=target.length){el.classList.remove('typing');resolveEnd();return;}
+      setTimeout(tick,reduce?0:22);
+    }
+    el.classList.add('typing');tick();
+    return{push(t){target+=t;},finish(){done=true;},ended,get text(){return target;}};
+  }
+
+  async function ask(q){
     q=q.trim(); if(!q||busy) return;
-    setBusy(true); add(q,'q');
-    const reply=answer(q);
-    const t=document.createElement('div'); t.className='msg a thinking';
-    t.innerHTML='<span>Thinking</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>';
-    log.appendChild(t); log.scrollTop=log.scrollHeight;
-    const think=reduce?300:900+Math.min(reply.length*4,900)+Math.random()*400;
-    setTimeout(()=>{
-      t.className='msg a'; t.textContent='';
-      const words=reply.split(' '); let i=0;
-      if(reduce){ t.textContent=reply; setBusy(false); input.focus(); return; }
-      (function type(){
-        t.textContent+=(i?' ':'')+words[i++]; log.scrollTop=log.scrollHeight;
-        if(i<words.length) setTimeout(type,28+Math.random()*45);
-        else { setBusy(false); }
-      })();
-    },think);
+    setBusy(true); bubble('q',q);
+    const think=bubble('a thinking'); think.innerHTML='<span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="lbl">Thinking</span>';
+    const lbl=think.querySelector('.lbl'); const labels=['Thinking','Checking Sandip’s notes','Writing'];let li=0;
+    const cycle=setInterval(()=>{li=Math.min(li+1,labels.length-1);lbl.textContent=labels[li];},1100);
+    const started=Date.now(); let answer='';
+    try{
+      const res=await fetch('/api/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({question:q,history:history.slice(-6)})});
+      if(res.status===429) throw Object.assign(new Error('rate'),{rate:true});
+      if(!res.ok||!res.body) throw new Error('http '+res.status);
+      const reader=res.body.getReader(), dec=new TextDecoder(); let t=null;
+      while(true){
+        const {value,done}=await reader.read(); if(done) break;
+        const chunk=dec.decode(value,{stream:true}); if(!chunk) continue;
+        if(!t){ const gap=700-(Date.now()-started); if(gap>0) await wait(gap); clearInterval(cycle); think.remove(); t=typer(bubble('a')); }
+        t.push(chunk);
+      }
+      if(!t) throw new Error('empty');
+      t.finish(); await t.ended; answer=t.text;
+    }catch(e){
+      const gap=(reduce?200:1200)-(Date.now()-started); if(gap>0) await wait(gap);
+      clearInterval(cycle); think.remove();
+      const text=e&&e.rate?"That's a lot of questions in a short time. Try again in a few minutes, or email "+EMAIL+".":canned(q);
+      const t=typer(bubble('a')); t.push(text); t.finish(); await t.ended; answer=text;
+    }
+    history.push({role:'user',content:q},{role:'assistant',content:answer});
+    setBusy(false);
   }
-  document.getElementById('prompts').addEventListener('click',e=>{ if(e.target.tagName==='BUTTON') ask(e.target.textContent); });
-  const form=document.getElementById('ask-form'), input=document.getElementById('ask-input');
-  form.addEventListener('submit',e=>{ e.preventDefault(); ask(input.value); input.value=''; });
 
-  const fab=document.getElementById('fab'), hero=document.querySelector('.hero');
-  if('IntersectionObserver' in window){
-    const seen={hero:true,ask:false};
-    const sync=()=>{ const show=!seen.hero&&!seen.ask; fab.setAttribute('aria-hidden',show?'false':'true'); fab.tabIndex=show?0:-1; };
-    new IntersectionObserver(es=>{es.forEach(e=>{seen[e.target===hero?'hero':'ask']=e.isIntersecting});sync();},{threshold:0}).observe(hero);
-    new IntersectionObserver(es=>{es.forEach(e=>{seen.ask=e.isIntersecting});sync();},{threshold:.25}).observe(document.getElementById('ask'));
-  }
-  fab.addEventListener('click',()=>setTimeout(()=>{ if(window.matchMedia('(hover:none)').matches) return; input.focus({preventScroll:true}); },400));
+  prompts.addEventListener('click',e=>{const b=e.target.closest('button');if(b)ask(b.textContent);});
+  form.addEventListener('submit',e=>{e.preventDefault();const q=input.value;input.value='';ask(q);});
 
+  // Copy the email address alongside mailto links (helps when no mail app is set up).
   const toast=document.getElementById('toast');
-  function show(msg){ toast.textContent=msg; toast.hidden=false; clearTimeout(show.t); show.t=setTimeout(()=>toast.hidden=true,1800); }
-  document.querySelectorAll('button.copy').forEach(b=>b.addEventListener('click',()=>{
-    const email=b.dataset.email;
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(email).then(()=>show('Email copied'),()=>show(email));
-    } else show(email);
+  function show(m){toast.textContent=m;toast.hidden=false;clearTimeout(show.t);show.t=setTimeout(()=>toast.hidden=true,2200);}
+  document.querySelectorAll('[data-copy]').forEach(a=>a.addEventListener('click',()=>{
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(EMAIL).then(()=>show('Email copied: '+EMAIL),()=>{});}
   }));
+
+  // Nav border on scroll; floating demo button once the demo is off screen.
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>8); onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+  const fab=document.getElementById('fab');
+  if('IntersectionObserver' in window){
+    const vis={demo:true,contact:false};
+    const sync=()=>{const show=!vis.demo&&!vis.contact;fab.setAttribute('aria-hidden',show?'false':'true');fab.tabIndex=show?0:-1;};
+    const io=new IntersectionObserver(es=>{es.forEach(e=>{vis[e.target.id]=e.isIntersecting;});sync();},{threshold:.15});
+    io.observe(document.getElementById('demo')); io.observe(document.getElementById('contact'));
+  }
 })();
 </script>
-
 </body>
 </html>
