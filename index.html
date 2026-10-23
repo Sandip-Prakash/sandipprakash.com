@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: one narrow reading column with a hero split (pitch | Ask Sandip console), then the story told as four acts, work cards, an "off stage" band, and contact. Dark-first, chai-amber accent. */
+/* Layout: one narrow reading column with a hero split (pitch | Ask Sandip console), then the story told as four acts, work cards, a "behind the scenes" band, and contact. Dark-first, chai-amber accent. */
 :root{
   --bg:#0d1214;
   --surface:#141b1e;
@@ -150,7 +150,7 @@ section.band > .wrap{padding-block:clamp(3.5rem,8vw,5.5rem)}
 .card p{color:var(--muted);font-size:.9375rem}
 .card .proof{color:var(--fg);font-weight:600;font-size:.9375rem;border-top:1px solid var(--line);padding-top:.75rem}
 
-/* Off stage */
+/* Behind the scenes */
 .offstage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
 .off h3{font-size:1.5rem;margin-bottom:.5rem}
 .off p{color:var(--muted);font-size:.9375rem}
@@ -268,7 +268,7 @@ section[id],#ask{scroll-margin-top:4.5rem}
     <ul>
       <li class="hide-sm"><a href="#story">Story</a></li>
       <li><a href="#work">Work</a></li>
-      <li class="hide-sm"><a href="#offstage">Off stage</a></li>
+      <li class="hide-sm"><a href="#behind-the-scenes">Behind the scenes</a></li>
       <li><a class="ask" href="#ask">Ask Sandip</a></li>
     </ul>
   </div>
@@ -431,10 +431,10 @@ section[id],#ask{scroll-margin-top:4.5rem}
     </div>
   </section>
 
-  <section class="band" id="offstage">
+  <section class="band" id="behind-the-scenes">
     <div class="wrap">
       <div class="section-head">
-        <p class="eyebrow">Off stage</p>
+        <p class="eyebrow">Behind the scenes</p>
         <h2>The rest of the story.</h2>
       </div>
       <div class="offstage">
